@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/style.css">
+
+    <!-- Completa tu nombre -->
+    <title>Juan Luis Muñoz Barrio</title>
+
+</head>
+
+<body>
+
+    <!-- Completar html aqui -->
+
+    <!-- Pantalla Principal -->
+    <div id="pantalla_principal">
+        <div class="contedor_principal">
+            <div class="contenedor_1">
+                <div class="titulo">
+                    <p class="titulo">Aplicación de dietas</p>
+                </div>
+                <div class="central">
+                    <div class="tabla">
+                        <table class="tabla_conte">
+                            <tr class="fila Titulos">
+                                <th>Nombre</th>
+                                <th>Sexo</th>
+                                <th>Edad</th>
+                                <th>Altura</th>
+                                <th>Peso</th>
+                                <th>Actividad</th>
+                                <th>IM Basal</th>
+                                <th>Calorias necesarias</th>
+                            </tr>
+                            <tr class="fila">
+                                <td>Francisco</td>
+                                <td><span class="etiqueta genero_masculino">hombre</span></td>
+                                <td>38</td>
+                                <td>181</td>
+                                <td>80</td>
+                                <td><span class="etiqueta actividad">moderada</span></td>
+                                <td><span class="cifra">1456</span> kCal</td>
+                                <td><span class="cifra">1872</span> kCal</td>
+                            </tr>
+                            <tr class="fila">
+                                <td>Jose Antonio</td>
+                                <td><span class="etiqueta genero_masculino">hombre</span></td>
+                                <td>40</td>
+                                <td>184</td>
+                                <td>47</td>
+                                <td><span class="etiqueta actividad">moderada</span></td>
+                                <td><span class="cifra">1359</span> kCal</td>
+                                <td><span class="cifra">1574</span> kCal</td>
+                            </tr>
+                            <tr class="fila">
+                                <td>Jenifer Lopez</td>
+                                <td><span class="etiqueta genero_femenino">mujer</span></td>
+                                <td>38</td>
+                                <td>170</td>
+                                <td>50</td>
+                                <td><span class="etiqueta actividad">alta</span></td>
+                                <td><span class="cifra">1439</span> kCal</td>
+                                <td><span class="cifra">1902</span> kCal</td>
+                            </tr>
+                            <tr class="fila">
+                                <td>Juan Luis</td>
+                                <td><span class="etiqueta genero_masculino">hombre</span></td>
+                                <td>19</td>
+                                <td>183</td>
+                                <td>72</td>
+                                <td><span class="etiqueta actividad">alta</span></td>
+                                <td><span class="cifra">1689</span> kCal</td>
+                                <td><span class="cifra">1723</span> kCal</td>
+                            </tr>
+                            <tr class="fila">
+                                <td>Maria</td>
+                                <td><span class="etiqueta genero_femenino">mujer</span></td>
+                                <td>27</td>
+                                <td>168</td>
+                                <td>49</td>
+                                <td><span class="etiqueta actividad">alta</span></td>
+                                <td><span class="cifra">1508</span> kCal</td>
+                                <td><span class="cifra">1640</span> kCal</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="boton_pantalla_principal">
+                        <button onclick="AbrirpantallaSecundaria();">Añadir cliente</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p class="contenido_footer">Juan Luis Muñoz Barrio&#169;2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  Pantalla Secundaria-->
+
+    <div id="pantalla_secundaria">
+        <div class="contenedor_secundario">
+            <div class="contenedor_2">
+                <div class="titulo">
+                    <p class="texto texto-titulo">Nuevo Cliente</p>
+                </div>
+                <div class="contenedor_tabla">
+                    <form id="form">
+                        <div class="inputs">
+                            <label id="Vali"></label>
+                            <div class="input" id="Nombre_Cliente">
+                                <label>Nombre: </label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input">
+                                <label>Sexo: </label>
+                                <input type="radio" id="hombre" name="sexo" value="hombre" required>
+                                <label>Hombre</label>
+                                <input type="radio" id="mujer" name="sexo" value="mujer" required>
+                                <label>Mujer</label>
+                            </div>
+                            <div class="input">
+                                <label>Edad: </label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input">
+                                <label>Altura (cm): </label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input">
+                                <label>Peso (kg): </label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input">
+                                <label>Actividad fisica: </label>
+                                <select name="actividad" required>
+                                    <option value="0" >Elija una opción</option>
+                                    <option value="suave">Suave o sedentaria</option>
+                                    <option value="moderada" selected>Moderada</option>
+                                    <option value="alta">Alta</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer">
+                    <div class="Pagina2_Botones">
+                        <button class="boton" id="Nuevo_Cliente" onclick="Enviar()">Añadir Nuevo</button>
+                        <button class="boton" onclick="CerrarpantallaSecundaria()" id="Atras">Volver Atrás</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="static/app.js"></script>
+
+</body>
+
+</html>

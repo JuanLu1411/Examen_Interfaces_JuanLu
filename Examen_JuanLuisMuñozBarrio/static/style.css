@@ -1,0 +1,204 @@
+:root{
+    --background-negro: #000;
+    --fuente-titulos: 'Fredoka One', cursive;
+}
+
+.contedor_principal{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(191, 158, 158), rgb(74, 73, 73),#a26817);
+    display: flex;
+}
+
+#pantalla_secundaria{
+    top: 300px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(191, 158, 158), rgb(74, 73, 73),#a26817);
+    display: none;
+}
+
+.contenedor_1{
+    margin: auto;
+    background-color: #DDDDDD;
+    width: 50%;
+    height: 48vh;
+    border: 2px solid black;
+    box-shadow: 2px -2px #444;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_2{
+    margin: auto;
+    background-color: #DDDDDD;
+    width: 50%;
+    height: 48vh;
+    border: 2px solid black;
+    box-shadow: 2px -2px #444;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.titulo{
+    flex: 3px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.titulo{
+    font-size: 18px;
+    font-family: var(--fuente-titulos);
+}
+.contenedor_tabla{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF;
+}
+
+.Titulos{
+    background-color: #EB9A25;
+}
+
+.tabla{
+    margin: auto;
+    position: relative;
+    left: 0px;
+    display: block;
+    text-align: center;
+}
+
+table{
+    border: #EB9A25 1px solid;
+    border-collapse: collapse;
+    border-spacing: 30px;
+    background-color: #FFF;
+}
+
+.texto-tabla th{
+    font-size: 16px;
+    font-family: var(--fuente-titulos);
+}
+
+table th{
+    height: 20px;
+}
+table tr:hover td{
+    background-color: rgba(239,156,1,0.8);
+}
+tr,td{
+    border: #EB9A25 1px solid;
+
+}
+
+table td{
+    width: 100px;
+    height: 50px;
+}
+
+.footer{
+    flex: 2;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+.contenido_footer{
+    font-size: 17px;
+    font-family: var(--fuente-titulos);
+}
+
+.contenedor_secundario{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    margin: auto;
+    background-color: #DDDDDD;
+    width: 50%;
+    height: 65vh;
+    border: 2px solid black;
+    box-shadow: 2px -2px #444;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton_pantalla_principal{
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: 1%;
+
+}
+.boton_pantalla_principal button:hover{
+    cursor: pointer;
+}
+.boton_pantalla_principal button{
+    margin: auto;
+    padding: 1% 4%;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+}
+.etiqueta{
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+.genero_masculino{
+    background-color: blue;
+}
+.genero_femenino{
+    background-color: pink;
+}
+.actividad{
+    background-color: darkgray;
+}
+.cifra{
+    font-size: 22px;
+}
+ #cuadro-modal{
+    display: none;
+}
+
+form{
+    margin: auto;
+}
+
+.Pagina2_Botones{
+    display: flex;
+    justify-content: center;
+}
+.Pagina2_Botones button{
+    margin: 2% 3%;
+    padding: 2% 5%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#Nuevo_Cliente{
+    background-color: green;
+    border: #000 2px solid;
+}
+#Atras{
+    background-color: gray;
+}
+.input{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width :1700px) {
+.tabla{
+    margin: auto;
+    position: relative;
+    left: 6%;
+    display: block;
+    text-align: center;
+}
+}
