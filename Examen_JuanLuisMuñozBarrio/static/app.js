@@ -1,6 +1,6 @@
 // Juan Luis Muñoz Barrio
 
-// Ventana modal
+// Ventana Secundaria
 
 function AbrirpantallaSecundaria() {
   document.getElementById('pantalla_secundaria').style.display = 'block';
@@ -13,7 +13,7 @@ function CerrarpantallaSecundaria() {
 }
 
 
-  // enviar datos
+  // enviar Formulario
 
 
     function Enviar(){
